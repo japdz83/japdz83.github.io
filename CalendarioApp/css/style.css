@@ -1,0 +1,260 @@
+/*=================================================================
+  @Import
+==================================================================*/
+@import url('fonts.css');
+
+/*=================================================================
+  Estilos Genesrales
+==================================================================*/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body{
+  background-image: url(../img/pexels-photo-35-montant-color.jpeg);
+  background-attachment: contain; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  font-family: "Exo2-Regular_0", Roboto, sans-serif;
+  font-size: 16px;
+  background-color: #f2f2f2;
+  color: #666666;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: "Exo2-Bold_0", Roboto-Bold, sans-serif;
+  font-weight: 700;
+}
+a{
+  text-decoration: none;
+}
+ul, ol, li{
+  list-style: none;
+}
+/*=================================================================
+  Estilos de la tarjeta
+==================================================================*/
+.container{
+  /*height: 100%;*/
+  max-width: 400px;
+  margin: 100px auto 0;
+  -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+  padding: 5px;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+/*=================================================================
+  Estilos del Header
+==================================================================*/
+.top-view{
+  width: 100%;
+  height: 35%;
+  background-image: url(../img/pexels-photo-167699.jpeg);
+  background-attachment: contain; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+.top-view h1{
+  font-family: 'Exo2-Light_0', sans-serif;
+  font-weight: 200;
+  font-size: 26px;
+  text-align: center;
+  margin: 10px 0;
+  letter-spacing: 1.5;
+}
+.color-layer{
+  background-color: rgba(0,75,150,0.2);
+  height: 100%;
+  width: 100%;
+  padding: 20px 20px 0 20px;
+  box-sizing: border-box;
+}
+.top-view .header{
+  position: relative;
+}
+.top-view .navbar{  
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 20px;
+}
+.top-view .navbar a{
+  color: #fff;
+  padding-right: 5px;
+  padding-left: 5px;
+  font-size: 25px;
+}
+.top-view .header .profile-container{
+  
+  width: 100%;
+  height: 100%;
+  margin: 20px auto;
+}
+.profile{
+  border-radius: 50%; 
+  width: 40px; 
+}
+.top-view .header .profile-container img{
+  width: 120px;
+  margin: 10px auto;
+}
+.top-view .header .profile, .main{
+  display: block;  
+  position: relative;
+  height: 120px;
+  width: auto;
+  margin: 40px auto;  
+
+}
+.notifications{
+  position: absolute;
+  border-radius: 50%;
+  background-color: #0683F8;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-size: 15px;
+  padding: 6px 0;
+  top: 50px;
+  right: 110px;
+  font-weight: 700;
+}
+.top-view .header .month-selection{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  padding: 10px 0;
+}
+.top-view .header .month-selection span.month{
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+.top-view .header .month-selection .icon{
+  font-size: 20px;
+  font-weight: 100;
+}
+
+/*=================================================================
+  Estilos del Agenda
+==================================================================*/
+.botton-view{
+  overflow: hidden;
+  height: 50%;
+  background-color: #f2f2f2;
+}
+.botton-view .week-container{
+  padding: 10px;
+}
+ul.week{
+  display: flex;
+  justify-content: space-around;  
+  text-align: center;
+  margin-bottom: 2px;
+  position: relative;
+}
+
+li.day{
+  margin: 5px 0;
+  text-align: center;
+  padding: 0 0 13%;
+  font-weight: 300;
+  width: 13%;
+  height: 0;
+  box-sizing: border-box;
+  position: relative;  
+}
+li.day, li.day-name{
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+li.day, li.day-name span{
+  font-size: 13px;
+}
+.botton-view .week-container .week li.current{
+  background-color: #989898;
+  color: #fff;  
+  border-radius: 50%;
+}
+li.point::after{
+  content: '';
+  width: 5px;
+  height: 5px;
+  background-color: red;
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  margin-left: -2.5px;
+  border-radius: 50%;
+}
+.botton-view .week-container .week li.day span{
+  display: block;
+  position: absolute;
+  font-size: 14px;
+  width: 100%;  
+  top: 32%;
+  text-align: center; 
+}
+.botton-view .entry-container .entry{
+  padding: 20px;
+  border-top: 1px solid #989898;
+}
+.botton-view .entry-container .entry img{
+  display: inline-block;
+  margin-right: 15px;
+}
+.botton-view .entry-container .entry .title{
+  font-size: 14px;
+  color: #000;
+}
+.botton-view .entry-container .entry .title .name{
+  font-weight: 700;
+}
+.botton-view .entry-container .entry .time{
+  font-weight: 300;
+  display: block;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.entry .text{
+  display: inline-block;
+}
+.botton-view .actionbutton{
+  text-align: center;
+  font-size: 25px;  
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #0683F8;
+  color: #fff;
+  border-radius: 50%;
+  bottom: 17%;
+  right: 40%;
+  z-index: 100;
+  box-shadow: 0 0px 10px rgba(0,0,0,.8);
+  transition: all .3s ease;
+  font-weight: 100;
+}
+.botton-view .actionbutton span{
+  font-family: '';
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  box-sizing: border-box;
+  font-weight: 100;  
+}
+.botton-view .actionbutton:hover{
+  background-color: #035CAF;
+}
+
