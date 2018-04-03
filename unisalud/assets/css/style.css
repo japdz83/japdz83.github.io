@@ -1,0 +1,988 @@
+/*
+Template Name: Design and Development Responsive HTML5/CSS3 BootsTrap Template
+Author: Johan Prado
+Author URI: www.johanprado.cl
+Description: Design and Development Responsive HTML5/CSS3/Bootstrap Basic Template
+Version: 1.0
+Tags: single-page, custom-colors, post-formats, responsive, html5, css3
+*/
+
+
+/* Table of Content
+==================================================
+	#Inicio
+	#Nosotros
+	#Servicios	
+	#Contacto
+*/
+
+/*=================================================================
+	@Import
+==================================================================*/
+@import url('fonts.css'); 
+
+*{
+	padding:0;
+	margin: 0;
+	bo
+}
+/*=================================================================
+	Estilos Generales
+==================================================================*/
+
+body {
+	background-color: #fff;
+	font-size: 16px;
+	font-family: 'OpenSans-Regular', 'Arial', 'Helvetica', sans-serif;
+	line-height: 1.5;
+	color: #222222;
+	font-weight: 100;
+}
+
+
+ol, ul, li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	color: #fff;
+	-webkit-transition: all .3s ease-in 0s;
+	   -moz-transition: all .3s ease-in 0s;
+	    -ms-transition: all .3s ease-in 0s;
+	     -o-transition: all .3s ease-in 0s;
+	        transition: all .3s ease-in 0s;
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: Montserrat-Regular;
+	font-weight: 500;
+	letter-spacing: 1px;
+}
+
+.border{
+	border-top: 1px solid #d6ab00;
+	height: 5px;
+	margin: 10px auto 0;
+	position: relative;
+	width: 100px;
+}
+
+.border:before{
+	background-color: #d6ab00;
+	border: 1px solid #d6ab00;
+	content: '';
+	height: 10px;
+	width: 40px;
+	left: 50%;
+	margin-left: -20px;
+	position: absolute;
+	top: -5px;
+}
+
+.line{
+    position: relative;
+	width: 95px;
+    height: 3px;
+    left: 0;
+    top: -5px;
+    background-color: #d6ab00;
+}
+
+.title{
+	padding-bottom: 70px;
+}
+
+.title h2{
+	font-family: Montserrat-Regular;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 38px;
+	color: #222222;
+	letter-spacing: 1px;
+}
+
+.title-inter{
+	padding: 70px auto;	
+	margin-bottom: 30px;
+}
+
+.title-inter h2{
+	font-family: Montserrat-Regular;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 30px;
+	color: #222222;
+}
+
+.parallax-section {
+	background-attachment: fixed !important;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.btn-sabermas{
+	background-color: #d6ab00;
+	border-radius: 35px;
+	color: #FFF;	
+	padding: 12px 35px;
+	box-shadow: 0px 0px 5px #202020;
+}
+
+.btn-sabermas a{
+	text-decoration: none;
+}
+
+.btn-sabermas:hover{
+	text-decoration: none;
+	color: #222222;
+
+}
+
+
+
+/*=================================================================
+	Estilos Generales del Header
+==================================================================*/
+
+/* ---------- Estilos Dentro del Header => Nevegacion ---------- */
+.nav-1uni{
+	background: #d6ab00;
+	width: 100%;
+	z-index: 99;
+	position: fixed;
+	box-shadow: 0px 0px 5px #202020;		
+}
+
+.navbar{
+	border-radius: 0px;
+	height: 65px;
+}
+
+
+.navbar-brand .logo-nav img{
+	width: 120px;
+}
+
+.nav-1uni .navbar-nav > li > a{
+	color: #222222;
+	font-size: 14px;
+	line-height: 26px;
+	font-family: 'OpenSans-Regular', 'Arial', 'Helvetica', sans-serif;
+	padding: 20px 15px;
+
+	-webkit-transition: background .5s ease-in-out 0s;
+	   -moz-transition: background .5s ease-in-out 0s;
+		   -o-transition: background .5s ease-in-out 0s;
+			    transition: background .5s ease-in-out 0s;
+}
+
+.navbar-toggle{
+	margin-top: 15px;
+	margin-right: 20px;
+}
+
+.icon-bar{
+	background: #222222;
+}
+
+.nav-1uni .nav > li > a{
+	background: none;	
+}
+
+.nav-1uni .nav > li > a:after{
+	content: "";
+	position: absolute;
+	top: 40px;
+	left: 15px;
+	width: 50%;
+	height: 1px;
+	background-color: #222222;
+	opacity: 0;
+	-webkit-transition:all .2s ease-in-out;
+			transition:all .2s ease-in-out;
+}
+
+.nav-1uni .navbar-nav  > li > a:hover:after {
+    top:45px;
+	opacity: 1;
+}
+
+.nav-1uni .navbar-nav > li.current > a:after {
+    position: absolute;
+    display: block;
+	content: "";	
+	top: 40px;
+	height: 1px;
+	opacity: 1;		
+	background-color: #222222;
+}
+
+/* ---------- Estilos Dentro del Header => Slide ---------- */
+
+.slide-item img{
+	width: 29px;
+	margin: auto;
+}
+
+.slide-item{
+	position: absolute;
+	top: 30%;
+	width: 30%;
+	color: #fff;
+}
+
+.title-slide h2{
+	padding: 10px 0;
+	font-size: 45px;
+	color: #fff;
+	/*top: 40px;*/
+	font-family: Montserrat-Regular;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+.text-slide{
+	padding: 10px 0;
+}
+
+.btn-slide{
+	background-color: #d6ab00;
+	border-radius: 35px;
+	color: #FFF;	
+	padding: 12px 35px;	
+}
+
+
+.btn-slide a{
+	text-decoration: none;
+}
+
+.btn-slide:hover{
+	text-decoration: none;
+	color: #222222;
+
+}
+
+/* ---------------------------------------------- /*
+ *Scroll Down
+/* ---------------------------------------------- */
+
+.scroll-down {
+	position: absolute;
+	left: 50%;
+	bottom: 75px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	margin-left: -15px;
+	display: block;
+	z-index: 10;
+	font-size: 0.8em;
+    text-align: center;
+}
+
+.scroll-down span{
+    position: relative;
+    color: #fff;
+    -webkit-animation-name: drop;
+	-webkit-animation-duration: 1.5s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-delay: .3s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-play-state: running;
+	animation-name: drop;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-play-state: running;
+}
+
+@-webkit-keyframes drop	{
+	0%   { top:0px;  opacity: 0;}
+	30%  { top:10px; opacity: 1;}
+	100% { top:25px; opacity: 0;}
+}
+
+@keyframes drop	{
+	0%   { top:0px;  opacity: 0;}
+	30%  { top:10px; opacity: 1;}
+	100% { top:25px; opacity: 0;}
+}
+
+
+
+/*=================================================================
+	Estilos Generales del LandingPage ==> Porque Unisalud
+==================================================================*/
+
+#uni-intro{
+	padding: 70px 0;
+	margin-top: 10px;
+}
+
+.text-intro .title ul li span{
+	font-size: 10px;
+}
+
+.text-intro .title ul{
+	padding: 7px;
+	margin-bottom: 10px;
+}
+.img-uni1{
+	width: 565px;
+}
+
+.text-intro .title-intro h2{
+	color: #d6ab00;	
+}
+
+.text-intro p{
+	padding: 6px 0;
+	text-align: justify;
+
+}
+
+
+/*=================================================================
+	Estilos Generales del LandingPage ==> Servicios
+==================================================================*/
+#servicio{
+	padding: 30px 0;
+	margin-top: 30px;
+}
+.servicio{
+	background-image: url('../img/bg-servicios.jpg');
+	width: 100%;
+	height: auto;	
+	background-color: #fff;
+	background-attachment: contain; 
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	top: 0px;
+	/*z-index: -1000;*/
+}
+
+.container-item{
+	padding: 10px 0;
+	margin-top: 15px;
+}
+
+.item-serv{
+	padding: 30px 15px;
+	margin-top: 15px;
+}
+
+.text-serv p{
+	padding: 5px;
+	text-align: justify;
+
+}
+
+.bg-icono{	
+	background-color: #d6ab00;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	margin: 15px auto;
+
+}
+
+.bg-icono span.icon{	
+	font-size: 3em;	
+	line-height: 1.6;
+	color: #222222;
+
+}
+
+/*=================================================================
+	Estilos Generales del Footer
+==================================================================*/
+footer{
+background:#000;
+}
+
+footer ul.link-list li a{
+	color:#fff;
+	font-size: 14px;
+}
+
+footer ul.link-list li a:hover {
+	color:#d6ab00;
+}
+
+footer .widgetheading {
+	position: relative;
+}
+
+footer .widget .social-network {
+	position:relative;
+}
+
+footer .widget p {
+	font-size: 14px;
+	
+}
+
+footer .widget p i{
+	margin-right: 10px;
+}
+
+footer .widget p .icon-phone{
+	font-size: 14px;
+}
+
+footer .widget p .icon-email{
+	font-size: 14px;
+}
+
+
+footer .widget address{
+	font-size: 14px;
+}
+
+footer .widget h5{
+	font-size: 16px;
+} 
+
+
+
+#bottom footer{
+	position: absolute;
+	width: 60px;
+	height: 1px;
+	bottom: -1px;
+	right:0;
+}
+
+footer .widget .flickr_badge {
+    width: 100%;
+}
+footer .widget .flickr_badge img {
+    margin: 0 9px 20px 0;
+}
+
+footer{
+	padding:50px 0 0 0;
+	color:#f8f8f8;
+	background: #2D2D2D;
+}
+
+footer a {
+	color:#fff;
+}
+
+footer a:hover {
+	color:#d6ab00;
+}
+
+footer h1, footer h2, footer h3, footer h4, footer h5, footer h6{
+	color:#fff;
+}
+
+footer address {
+	line-height:1.6em;
+}
+
+footer h5 a:hover, footer a:hover {
+	text-decoration:none;
+}
+
+ul.social-network {
+	list-style:none;
+	margin:0px 0;
+
+}
+
+ul.social-network li {
+	display:inline;
+	margin: 0 5px;
+	
+}
+
+ul.social-network li a{
+	font-size: 14px;
+	
+}
+
+
+#sub-footer{
+	text-shadow:none;
+	color:#f5f5f5;
+	padding: 0;
+	padding-top:30px;	
+	margin:20px 0 0 0;
+	background: #202020;	
+}
+
+#sub-footer p{
+	margin:0;
+	padding:0;
+}
+
+#sub-footer span{
+	color:#f5f5f5;
+}
+
+.copyright {
+	text-align:left;
+	font-size:12px;
+}
+
+#sub-footer ul.social-network {
+	float:right;
+}
+
+.sub-footer ul .social-network li a i{
+	color: #fff;
+}
+
+/*=================================================================
+	Estilos Generales de Nosotros
+==================================================================*/
+
+/*-----------------------------------------------------------------
+	Estilos Seccion Nosotros==> Parallax 
+-------------------------------------------------------------------*/
+#parallax1{
+	background-image: url('../img/parallax/parallax_1.jpg');
+  	padding: 20px 0;
+	height: 500px;
+}
+
+.text-parallax h2{
+	font-family: Montserrat-Regular;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 70px;
+	color: #fff;
+	margin: 50px 0;
+	margin-top: 20%;
+}
+
+.line-parallax{
+	position: relative;
+	width: 165px;
+	height: 3px;
+	left: 0;
+	top: -55px;
+	background-color: #d6ab00;
+}
+
+/*-----------------------------------------------------------------
+	Estilos Seccion Nosotros==> Mision, Vision, etc... 
+-------------------------------------------------------------------*/
+#nosotros{
+	margin-bottom: 20px;
+}
+
+.quienes-somos{
+	padding: 50px 0;
+}
+
+.quienes-somos .text-nosotros ul li span.icon-android-done{
+	font-size: 18px;	
+	color: #222222;	
+}
+
+.text-nosotros{
+	padding: 10px
+}
+
+.text-nosotros p span{
+	font-size: 10px;
+}
+
+.contenido-item{
+	padding: 15px;
+}
+
+.contenido-item .content-item-n{
+	padding: 10px 0px;		
+}
+
+.contenido-item .mision{	
+	margin-right: 35px;
+}
+
+.contenido-item .vision{	
+	margin-right: 35px;
+}
+
+.contenido-item .valores{	
+	margin-left: 35px;
+}
+
+.contenido-item .content-item-n .text-mision span{
+	font-size: 10px;
+}
+
+.contenido-item .content-item-n .text-vision span{
+	font-size: 10px;
+}
+
+.list-valores ul li span{
+	font-size: 10px;
+}
+
+.el-equipo{
+	padding: 20px 0;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+
+
+/*-----------------------------------------------------------------
+	Estilos Seccion Servicios==> Parallax 
+-------------------------------------------------------------------*/
+#parallax3{
+	background-image: url('../img/parallax/parallax_3.jpg');
+  	padding: 20px 0;
+	height: 500px;
+}
+
+/*=================================================================
+	Estilos Generales de Servicios
+==================================================================*/
+
+.conten-serv{
+	padding: 70px 15px;
+}
+
+.modal-title{
+	margin-bottom: 25px;
+	right: 
+}
+
+.panel-title a i{
+	font-size: 10px;
+}
+
+.ico-servicio{
+	position: relative;
+	background-color: #d6ab00;
+	width: 350px;
+	height: 350px;
+	border-radius: 50%;
+	margin: 20px auto;
+	top: 125px;
+	z-index: -99;
+	box-shadow: 5px 5px 15px  #000000;
+}
+
+.ico-servicio span{
+	font-size: 15em;
+	line-height: 1.4;
+}
+
+.ico-servicio span.icon-icon-capacitacion{
+	font-size: 14em;
+}
+
+/*=================================================================
+	Estilos Generales de Empleo
+==================================================================*/
+
+/*-----------------------------------------------------------------
+	Estilos Seccion Empleo==> Parallax 
+-------------------------------------------------------------------*/
+#parallax4{
+	background-image: url('../img/parallax/parallax_2.jpg');
+  	padding: 20px 0;
+	height: 500px;
+}
+
+/*----------------------------------------------------------------
+	Estilos Seccion Empleo
+------------------------------------------------------------------*/
+#empleo{
+	padding: 50px 0;
+    margin-bottom: 0px;
+}
+
+.panel-body h3{
+	margin-bottom: 15px;
+	border-bottom: 1px solid rgba(0,0,0, .4);
+}
+
+.img-empleo img{
+	margin: 35% auto;
+}
+
+
+/*=================================================================
+	Estilos Generales de Contacto
+==================================================================*/
+
+/*-----------------------------------------------------------------
+	Estilos Seccion Contacto==> Parallax 
+-------------------------------------------------------------------*/
+#parallax2{
+	background-image: url('../img/parallax/parallax_4.jpg');
+  	padding: 20px 0;
+	height: 500px;
+}
+
+/*----------------------------------------------------------------
+	Estilos Seccion Formulario de Contacto
+------------------------------------------------------------------*/
+#contacto {
+    padding: 70px 0;
+    margin-bottom: 10px;
+}
+
+.icon-iphone{
+	font-size: 16px;
+}
+
+.icon-phone {
+	font-size: 14px;
+}
+
+.con-ico-mail {
+	font-size: 12px;
+}
+
+.contact-form {
+	margin-bottom: 10px;
+}
+
+.contact-form .form-control {
+	background-color: transparent;
+	border: 1px solid #d6ab00;
+	height: 38px;
+}
+
+#contact-submit {	
+	background-color: #d6ab00;
+	box-shadow: 0px 0px 5px #202020;
+	color: #fff;
+	padding: 12px 0;
+	width: 100%;
+	margin: 0;
+}
+
+#contact-submit:hover {    
+    color: #222222;
+}
+
+.contact-form textarea.form-control {
+    padding: 10px;
+    height: 120px;
+}
+
+.contact-info p {
+	margin-bottom: 25px;
+}
+
+.con-info {
+    margin-bottom: 20px;
+}
+
+.con-info i,
+.con-info span {
+    float: left;
+}
+
+.con-info span {
+	margin: -5px 0 0 15px;
+}
+
+.error {
+    display: none;
+    padding: 10px;
+    color: #D8000C;
+    border-radius: 4px;
+    font-size: 13px;
+    background-color: #FFBABA;
+}
+
+.success {
+    background-color: #6cb670;
+    border-radius: 4px;
+    color: #fff;
+    display: none;
+    font-size: 13px;
+    padding: 10px;
+}
+
+/*----------------------------------------------------------------
+	Estilos Seccion Contacto ==> Redes
+------------------------------------------------------------------*/
+
+.social-icon {
+    padding: 30px 0px;
+}
+
+.social-icon > ul {
+    text-align: center;
+}
+
+.social-icon > ul > li {
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.social-icon > ul > li > a {
+    background-color: #26292e;
+    display: block;
+    height: 70px;
+    width: 70px;
+
+	-webkit-transform: rotateY(180deg);
+	   -moz-transform: rotateY(180deg);
+		-ms-transform: rotateY(180deg);
+		 -o-transform: rotateY(180deg);
+			transform: rotateY(180deg);
+
+	-webkit-transition: all 400ms ease-out 0s;
+	   -moz-transition: all 400ms ease-out 0s;
+		 -o-transition: all 400ms ease-out 0s;
+			transition: all 400ms ease-out 0s;
+}
+
+.social-icon > ul > li > a > i {
+    color: #d6ab00;
+    display: inline-block;
+    font-size: 30px;
+    line-height: 70px;
+    margin: 0;
+
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+
+	-webkit-transform: rotateY(180deg);
+	   -moz-transform: rotateY(180deg);
+		-ms-transform: rotateY(180deg);
+		 -o-transform: rotateY(180deg);
+			transform: rotateY(180deg);
+
+	-webkit-transition: all 400ms ease-out 0s;
+	   -moz-transition: all 400ms ease-out 0s;
+		 -o-transition: all 400ms ease-out 0s;
+			transition: all 400ms ease-out 0s;
+}
+
+.social-icon > ul > li:hover a {
+    background-color: #d6ab00;
+	
+	-webkit-transform: rotateY(0deg);
+	   -moz-transform: rotateY(0deg);
+		-ms-transform: rotateY(0deg);
+		 -o-transform: rotateY(0deg);
+			transform: rotateY(0deg);
+}
+
+.social-icon > ul > li:hover a i {
+    color: #fff;
+    opacity: 1;
+    filter: alpha(opacity=100);
+	
+	-webkit-transform: rotateY(0deg);
+	   -moz-transform: rotateY(0deg);
+		-ms-transform: rotateY(0deg);
+		 -o-transform: rotateY(0deg);
+			transform: rotateY(0deg);
+}
+
+/*=================================================================
+	Estilos Responsive Desing
+==================================================================*/
+
+@media screen and (max-width: 420px){
+
+
+}
+
+@media screen and (max-width: 999px){
+	
+	.ico-servicio{
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 767px){
+	.navbar{
+		border-bottom: 1px solid #222222;
+	}
+
+	.nav-1uni .nav{
+		background-color: #d6ab00;
+		position: relative;
+		top: -2px;
+	}
+	
+	.nav-1uni .nav > li{
+		text-align: center;
+		border-bottom: 1px solid #222222;		
+	}
+
+	.nav-1uni .nav > li:hover{
+		background-color: #222222;
+		/*text-align: center;*/		
+	}
+
+	.nav-1uni .nav > li a:hover{
+		color: #d6ab00;
+	}
+	
+
+	.nav-1uni .navbar-nav > li > a:after {
+    	display: none;
+	}
+
+	.nav-1uni .navbar-nav > li.current {
+   		background-color: #222222;
+   		color: #d6ab00;
+  }
+	
+	.nav-1uni .navbar-nav > li.current >a:after{
+		display: none;
+	}
+
+/*=========== Texte Parallax ===========*/
+	
+	.text-parallax h2{
+		font-family: Montserrat-Regular;
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 50px;
+		color: #fff;
+		margin: 50px 0;
+		margin-top: 45%;
+		margin-left: 5%;
+	}
+
+	.line-parallax{
+		position: relative;
+		width: 165px;
+		height: 3px;
+		left: 0;
+		top: -55px;
+		background-color: #d6ab00;
+		margin-left: 5%;
+	}
+
+	
+
+
+/*=========== SubFooter Social ===========*/
+
+	ul.social-network{
+		margin-top: 25px;
+	}
+
+	
+
+
+
+	
