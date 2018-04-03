@@ -1,0 +1,31 @@
+@font-face{
+	font-family: Exo2-Regular;
+	src:url(../fonts/exo2/Exo2-Regular.ttf);
+}
+
+@font-face{
+	font-family: Exo2-Light;
+	src:url(../fonts/exo2/Exo2-Light.ttf);
+}
+
+@font-face{
+	font-family: Exo2-Thin;
+	src:url(../fonts/exo2/Exo2-Thin.ttf);
+}
+
+@font-face{
+	font-family: Exo2-Bold;
+	src:url(../fonts/exo2/Exo2-Bold.ttf);
+}
+
+@font-face{
+	font-family: Exo2-Italic;
+	src:url(../fonts/exo2/Exo2-Italic.ttf);
+
+}
+
+@font-face{
+	font-family: Exo2-Medium;
+	src:url(../fonts/exo2/Exo2-Medium.ttf);
+}
+
