@@ -1,0 +1,500 @@
+/*=================================================================
+Parallax CSS and Overlay
+==================================================================*/
+.parallax-section {
+    background-attachment: fixed !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#parallax {
+    background-image: url('../src/img/h1_hero-min.jpg');
+    padding: 50px 0;
+    height: 92.1vh;
+}
+
+#parallax2 {
+    background-image: url('../src/img/h2_hero-min.jpg');
+    padding: 50px 0;
+    height: 250px;
+    max-height: 100%;
+    min-height: 200px;
+}
+
+
+/*=================================================================
+  CSS -- TypeWriterEffect
+==================================================================*/
+.react-typewriter-text-wrap {
+
+    margin-top: 30% !important;
+    margin-left: 0%;
+    z-index: 10;
+
+}
+
+@media screen and (max-width: 1366px) {
+    #parallax {
+        height: 93.9vh;
+
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #parallax {
+        height: 91.5vh;
+
+    }
+
+    .react-typewriter-text-wrap {
+
+        margin-top: 40% !important;
+        margin-left: 20%;
+        z-index: 10;
+        font-size: 2rem !important;
+
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #parallax {
+        height: 95.6vh;
+
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #parallax {
+        height: 93.9vh;
+
+    }
+
+    .react-typewriter-text-wrap {
+
+        margin-top: 30% !important;
+        margin-left: 20%;
+        z-index: 10;
+        font-size: 2rem !important;
+    }
+}
+
+@media screen and (max-width: 812px) {
+    #parallax {
+        height: 100vh;
+
+    }
+
+    .react-typewriter-text-wrap {
+
+        margin-top: 15% !important;
+        margin-left: 7%;
+        z-index: 10;
+        font-size: 2rem !important;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    #parallax {
+        height: 90.8vh;
+
+    }
+
+    .react-typewriter-text-wrap {
+
+        margin-top: 15% !important;
+        margin-left: 2%;
+        z-index: 10;
+        font-size: 2rem !important;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #parallax {
+        height: 82vh;
+
+    }
+
+    .react-typewriter-text-wrap {
+        margin-top: 5% !important;
+        margin-left: 5%;
+        z-index: 10;
+        font-size: 2rem !important;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #parallax {
+        height: 93.1vh;
+
+    }
+
+    .react-typewriter-text-wrap {
+
+        margin-top: 10% !important;
+        margin-left: 2%;
+        z-index: 10;
+        font-size: 2rem !important;
+    }
+}
+
+
+/*=================================================================
+  Img hero Secction
+==================================================================*/
+img.heroImg {
+    margin-left: -14%;
+    max-width: 100%;
+    animation: movimiento 2.5s linear infinite;
+}
+
+@media screen and (max-width: 992px) {
+    img.heroImg {
+        margin-left: 2%;
+        max-width: 100%;
+    }
+}
+
+/*=================================================================
+  Img Contact 
+==================================================================*/
+img.imgContact {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 10%;
+    animation: movimiento 2.5s linear infinite;
+}
+
+@keyframes movimiento {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(30px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    img.imgContact {
+        margin-left: 0;
+        max-width: 100%;
+    }
+}
+
+
+/*=================================================================
+  Services
+==================================================================*/
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
+
+.card-container {
+    flex: 300px;
+    margin: 30px;
+    box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, .6);
+}
+
+.card-container .card {
+    font-weight: bold;
+    position: relative;
+    width: 100%;
+}
+
+.card-container .card {
+    cursor: pointer;
+    padding: 30px;
+    width: 100%;
+    height: 400px;
+    /* border: 2px solid #009fe3; */
+    background: #000d20;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: 0.25s ease;
+}
+
+.card-container .card:hover {
+    cursor: pointer;
+    transform: translate(-30px, -30px);
+    border-color: #009fe3;
+}
+
+.card-container .card:hover .card--display {
+    display: none;
+}
+
+.card-container .card:hover .card--hover {
+    display: block;
+}
+
+.card-container .card .card--display i {
+    font-size: 60px;
+    margin-top: 200px;
+}
+
+.card-container .card .card--display h2 {
+    margin: 20px 0 0;
+}
+
+.card-container .card .card--hover {
+    display: none;
+}
+
+.card-container .card .card--hover h2 {
+    margin: 20px 0;
+}
+
+.card-container .card .card--hover p {
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+.card-container .card a .card--hover p.link {
+    margin: 20px 0 0;
+    font-weight: bold;
+    color: #009fe3;
+}
+
+.card-container .card .card--border {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border: 3px dashed #009fe3;
+    z-index: -1;
+}
+
+.card-container .card.card--dark {
+    color: white;
+    background-color: #000d20;
+    border-color: #000d20;
+}
+
+.card-container .card.card--dark .card--hover .link {
+    color: #fde74c;
+}
+
+figure.snip0015 {
+    font-family: 'Raleway', Arial, sans-serif;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    /* margin: 10px; */
+    min-width: 350px;
+    max-width: 100%;
+    max-height: 350px;
+    width: 100%;
+    background: #000000;
+    text-align: center;
+    box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, .6);
+}
+
+/* @import url(myProjects/webProject/icofont/css/icofont.min.css); */
+
+.iconColor {
+    color: #fff !important;
+    font-size: 50px;
+}
+
+/*=================================================================
+  Portafolio
+==================================================================*/
+@import url("https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap");
+
+:root {
+    --d: 700ms;
+    --e: cubic-bezier(0.19, 1, 0.22, 1);
+    --font-sans: "Rubik", sans-serif;
+    --font-serif: "Cardo", serif;
+}
+
+
+
+.page-content {
+    display: grid;
+    grid-gap: 1rem;
+    padding: 1rem;
+    max-width: 1024px;
+    margin: 0 auto;
+    font-family: var(--font-sans);
+}
+
+@media (min-width: 600px) {
+    .page-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 800px) {
+    .page-content {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.card-work {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+    background-color: whitesmoke;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 600px) {
+    .card-work {
+        height: 350px;
+    }
+}
+
+.card-work:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background-size: cover;
+    background-position: 0 0;
+    transition: transform calc(var(--d) * 1.5) var(--e);
+    pointer-events: none;
+}
+
+.card-work:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    pointer-events: none;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.32) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.54) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.79) 100%);
+    transform: translateY(-50%);
+    transition: transform calc(var(--d) * 2) var(--e);
+}
+
+.card-work:nth-child(1):before {
+    background-image: url(https://images.unsplash.com/photo-1517021897933-0e0319cfbc28?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+}
+
+.card-work:nth-child(2):before {
+    background-image: url(https://images.unsplash.com/photo-1533903345306-15d1c30952de?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+}
+
+.card-work:nth-child(3):before {
+    background-image: url(https://images.unsplash.com/photo-1545243424-0ce743321e11?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+}
+
+.card-work:nth-child(4):before {
+    background-image: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+}
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    transition: transform var(--d) var(--e);
+    z-index: 1;
+}
+
+.content>*+* {
+    margin-top: 1rem;
+}
+
+.title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.copy {
+    font-family: var(--font-serif);
+    font-size: 1.125rem;
+    font-style: italic;
+    line-height: 1.35;
+}
+
+.btn {
+    cursor: pointer;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.65rem;
+    font-weight: bold;
+    letter-spacing: 0.025rem;
+    text-transform: uppercase;
+    color: white;
+    background-color: #009fe3;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #0070a0;
+}
+
+.btn:focus {
+    outline: 1px dashed yellow;
+    outline-offset: 3px;
+}
+
+@media (hover: hover) and (min-width: 600px) {
+    .card-work:after {
+        transform: translateY(0);
+    }
+
+    .content {
+        transform: translateY(calc(100% - 4.5rem));
+    }
+
+    .content>*:not(.title) {
+        opacity: 0;
+        transform: translateY(1rem);
+        transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+    }
+
+    .card-work:hover,
+    .card-work:focus-within {
+        align-items: center;
+    }
+
+    .card-work:hover:before,
+    .card-work:focus-within:before {
+        transform: translateY(-4%);
+    }
+
+    .card-work:hover:after,
+    .card-work:focus-within:after {
+        transform: translateY(-50%);
+    }
+
+    .card-work:hover .content,
+    .card-work:focus-within .content {
+        transform: translateY(0);
+    }
+
+    .card-work:hover .content>*:not(.title),
+    .card-work:focus-within .content>*:not(.title) {
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: calc(var(--d) / 8);
+    }
+
+    .card-work:focus-within:before,
+    .card-work:focus-within:after,
+    .card-work:focus-within .content,
+    .card-work:focus-within .content>*:not(.title) {
+        transition-duration: 0s;
+    }
+}
