@@ -181,6 +181,7 @@ const useStyles = makeStyles((theme) => ({
   sidebar: {
     padding: "10px 10px",
     width: "30vw",
+    color: "#009fe3",
     [theme.breakpoints.down("sm")]: {
       width: "50vw",
     },
@@ -190,7 +191,7 @@ const useStyles = makeStyles((theme) => ({
     },
     "& h5:hover": {
       cursor: "pointer",
-      color: "#009fe3",
+      color: "#000d20",
     },
   },
 }));
